@@ -28,4 +28,7 @@ Após esse comando (ou alguma combinação dos arquivos ".launch" ja mencionados
 
 o tópico pos_head_topic, *message type String*, é publicado com a orientação do rosto e o ângulo em relação à câmera.
 
-<img src="images/leg_monitoring.png" width="450">
+Nas imagens abaixo, é possível ver os pontos de referência da imagem, a orientação da face e o ângulo.
+
+<img src="images/head_control_center.png" width="450">
+<img src="images/head_control_right.png" width="450">
