@@ -30,5 +30,5 @@ o tópico pos_head_topic, *message type String*, é publicado com a orientação
 
 Nas imagens abaixo, é possível ver os pontos de referência da imagem, a orientação da face e o ângulo.
 
-<img src="images/head_control_center.png" width="450">
-<img src="images/head_control_right.png" width="450">
+<img src="images/head_control_center.png" width="300">
+<img src="images/head_control_right.png" width="300">
