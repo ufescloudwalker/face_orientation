@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!--USB Cam node-->
+    <node name="usb_cam_head" pkg="usb_cam" type="usb_cam_node" output="screen" >
+		<param name="camera_frame" type="string" value="cam_frame" />
+		<param name="video_device" value="/dev/video0"/>
+		<param name="pixel_format" value="yuyv" />
+		<param name="io_method" value="mmap"/>
+        <remap from="/usb_cam" to="/usb_cam_head"/>
+
+	</node>
+
+</launch>

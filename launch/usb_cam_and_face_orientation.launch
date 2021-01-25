@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!--USB CAM node-->
+    <node name="usb_cam_head" pkg="usb_cam" type="usb_cam_node" output="screen" >
+		<param name="camera_frame" type="string" value="cam_frame" />
+		<param name="video_device" value="/dev/video0"/>
+		<param name="pixel_format" value="yuyv" />
+		<param name="io_method" value="mmap"/>
+        <remap from="/usb_cam" to="/usb_cam_head"/>
+
+	</node>
+
+	<node pkg="face_orientation" name="face_orientation" type="face_orientation.py" output="screen">
+		<param name="face_landmark_path" value="$(find face_orientation)/scripts/shape_predictor_68_face_landmarks.dat"/>
+		<rosparam file="$(find face_orientation)/config/params.yaml" command="load"/>
+	</node>
+
+
+</launch>
