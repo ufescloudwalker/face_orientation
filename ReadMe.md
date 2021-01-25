@@ -26,7 +26,7 @@ O repositório é dividido em:
 Após esse comando (ou alguma combinação dos arquivos ".launch" ja mencionados),
 >roslaunch face_orientation usb_cam_and_face_orientation.launch
 
-o tópico pos_head_topic, *message type String*, é publicado com a orientação do rosto e o ângulo em relação à câmera.
+O tópico pos_head_topic, *message type String*, é publicado com a orientação do rosto e o ângulo em relação à câmera.
 
 Nas imagens abaixo, é possível ver os pontos de referência da imagem, a orientação da face e o ângulo.
 
