@@ -32,3 +32,15 @@ Nas imagens abaixo, é possível ver os pontos de referência da imagem, a orien
 
 <img src="images/head_control_center.png" width="300">
 <img src="images/head_control_right.png" width="300">
+
+**Citação**
+Ao utilizar este pacote, é necessário citar o trabalho abaixo. Os repositórios [formation_control](https://github.com/ufescloudwalker/formation_control), [face_orientation](https://github.com/ufescloudwalker/face_orientation) e [leg_monitoring](https://github.com/ufescloudwalker/leg_monitoring) são baseados no artigo [A novel multimodal cognitive interaction for walker-assisted rehabilitation therapies](https://ieeexplore.ieee.org/abstract/document/8779469/).
+
+>@inproceedings{scheidegger2019novel,
+  title={A novel multimodal cognitive interaction for walker-assisted rehabilitation therapies},
+  author={Scheidegger, Wandercleyson M and de Mello, Ricardo C and Jimenez, Mario F and M{\'u}nera, Marcela C and Cifuentes, Carlos A and Frizera-Neto, Anselmo and others},
+  booktitle={2019 IEEE 16th International Conference on Rehabilitation Robotics (ICORR)},
+  pages={905--910},
+  year={2019},
+  organization={IEEE}
+}
