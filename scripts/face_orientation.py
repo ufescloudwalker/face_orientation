@@ -41,7 +41,7 @@ class FaceOrientation():
 		self.imageCompressed = self.rospy.get_param("~use_compressed", "True")
 		self.controlRate = self.rospy.get_param("~control_rate", 100)
 		self.face_landmark_path = self.rospy.get_param("~face_landmark_path", "")
-		self.angle_min = self.rospy.get_param("~angle_min", 15)
+		self.angle_min = self.rospy.get_param("~angle_min", 10)
 		self.cam_id = self.rospy.get_param("~cam_id",0)
 		self.control_rate = self.rospy.get_param("~control_rate","")
 		self.D = self.rospy.get_param("~D",[])
@@ -144,11 +144,11 @@ class FaceOrientation():
 					self.logtime.publish(time_msg)
 
 					#comandos
-					if (self.euler_angle[1, 0] > 15):
+					if (self.euler_angle[1, 0] > self.angle_min):
 						self.action = -1
 						cv2.putText(frame, "Left", (10, 50), cv2.FONT_HERSHEY_SIMPLEX,
 						0.5, (255, 0, 0), thickness=1)
-					elif (self.euler_angle[1, 0] < -15):
+					elif (self.euler_angle[1, 0] < -self.angle_min):
 						self.action = 1
 						cv2.putText(frame, "Right", (10, 50), cv2.FONT_HERSHEY_SIMPLEX,
 						0.5, (255, 0, 0), thickness=1)
